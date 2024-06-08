@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Kraft - The Game</title>
+  </head>
+  <body>
+  	  <div id="ctrl" >
+  	  			<div><h1>Kraft - Contrôles</h1></div>
+  	  			<div>
+  	  			<button id="closeCtrl" onclick="hideControls()">X</button>
+				<h2>Deplacement : <i>←→↓↑ OU ZQSD</i></h2>
+				<h2>Ralentir : <i>SHIFT</i></h2>
+				<h2>Cliquer sur un item pour l'enlever de l'inventaire</h2>
+				<h2>Rendez vous aux distributeurs pour pouvoir crafter</h2>
+				<h2>Objectif : <i>El famoso Super Computer</i></h2>
+				</div>
+	  </div>
+	  <div id="overlay">
+		<div>
+			<h1>Kraft - Pause</h1>
+		</div>
+		<div>
+			<button id="closeMenu" onclick="cacherEscapeMenu()">X</button>
+			<button onclick="window.location.href = './game.html'">Recommencer</button>
+			<button onclick="showControls()">Contrôles</button>
+			<button onclick="window.location.href = './index.html'">Revenir a l'accueil</button>
+		</div>
+	  </div>
+	  <div id="info">
+	  <audio id="player" autoplay="autoplay" loop="loop">
+			<source id="src" src="assets/main.mp3" type="audio/mp3">
+      </audio>
+	  	<div id="time"></div>
+		<div id="box">
+			<div id="inventaire">
+				<div>
+					<h2 style="font-size: 30px">Menu : Echap</h2>
+					<h1>Inventaire</h1>		
+					<button id="button" onclick="afficherInventaire()" >-</button>
+				</div>
+				<div id="container" style='display:flex;'>
+					<div class="invBox" id="item">
+						<div style='color:chocolate;font-size:25px;'>Matières premières</div>
+					</div>
+					<div class="invBox" id="craft">
+						<div style='color:chocolate;font-size:25px;'>Objets craftés</div>
+					</div>
+				</div>
+			</div>
+		 </div>
+		<div id="craftDispo">
+		</div>
+	  </div>
+	  
+  </body>
+<script type="text/javascript" src="js/functions.js"></script>  
+<script type="text/javascript" src="js/konami.js"></script>  
+<script type="text/javascript" src="js/item.js"></script>  
+<script type="text/javascript" src="js/craft.js"></script>  
+<script type="text/javascript" src="js/map.js"></script>  
+
+<script type="text/javascript" src="js/entity.js"></script>  
+<script type="text/javascript" src="js/hero.js"></script>  
+<script type="text/javascript" src="js/game.js"></script>  
+<script type="text/javascript" src="js/loader.js"></script>  
+<script type="text/javascript" src="js/keyboard.js"></script>  
+<script type="text/javascript" src="js/camera.js"></script>  
+<script type="text/javascript" src="js/main.js"></script>  
+
+</html>

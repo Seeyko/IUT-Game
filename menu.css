@@ -1,0 +1,75 @@
+/* CSS Document */
+body{
+	overflow: hidden;
+	background-color: beige;
+	white-space: nowrap;
+}
+
+.closebtn{
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	font-size: 15px;
+	margin: 1%;
+	border-radius: 10px;
+	background-color: transparent;
+	color: orange;
+	font-size: 35px;
+}
+
+.overlay div{
+	margin-bottom: 3%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.overlay h1{	
+	text-align: center;
+	font-size: 70px;
+	color: gold;
+	top: 5%;
+}
+.overlay{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	width: 110%;
+	height: 110%;
+	background-color: beige;
+	z-index: 1100;
+	position: absolute;
+	flex-direction: column;
+	transition: top 0.5s;
+	margin: -5%;
+	top:-2000px;
+	text-align: center;
+}
+#menu{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	background-color: beige;
+}
+#menu div{
+	margin-bottom: 10%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+button:not(.closebtn) {
+	background-color: antiquewhite;
+	font-size: 40px;
+	border: dotted 3px gold;
+	margin: 5%;
+	width: 110%;
+}
+
+h1{
+	text-align: center;
+	font-size: 70px;
+	color: gold;
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kraft - The Menu</title>
+ <link rel="stylesheet" href="style.css" type="text/css">
+ <link rel="stylesheet" href="menu.css" type="text/css">
+<script type="text/javascript" src="js/functions.js"></script>  
+
+</head>
+
+<body>
+	<div id="Instructions" class="overlay">
+  	  	<div>
+  	  		<h1>Kraft - Instructions</h1>
+  	  	</div>
+	  	<div>
+	  		<button class="closebtn" onclick="hideInstrutions()">X</button>
+			<h2>Histoire</h2>
+			<!--  
+				Mettre du texte qui raconte l'histoire du jeu
+			-->
+			<h3>Vous êtes dans l'iut et vous devez craftez le super computer.....</h3>
+		</div>
+	</div>
+	<div id="Credits" class="overlay">
+	  	<div>
+	  		<h1>Kraft - Credits</h1>
+	  	</div>
+	  	<div>
+		  	<button class="closebtn" onclick="hideCredits()">X</button>
+			<h3>ANDRIEU Tom - andrieutom30@gmail.com</h3>
+			<h3>BIGOT Florian - bigot.florian@etu.umontpellier.fr</h3>
+			<h3>BOULIER Alexandre - boulier.alexandre@etu.umontpellier.fr</h3>
+			<h3>CHAPTAL Adrien - chaptal.adrien@etu.umontpellier.fr</h3>
+		</div>
+	</div>
+	<div id="menu">
+		<div>
+			<h1>Kraft</h1>
+		</div>
+		<div>
+			<button onclick="window.location.href = './game.html'">Jouer</button>
+			<button onclick="showInstructions()">Instructions</button>
+			<button onclick="showCredits()">Credits</button>
+		</div>
+	</div>
+</body>
+
+</html>
